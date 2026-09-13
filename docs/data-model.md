@@ -4,11 +4,10 @@
 - name: string (required)
 - description: string (optional)
 - priority: enum (low, medium, high) (default: medium)
-- due_date: datetime (optional)
+- due_datetime: datetime (optional)
 - completed: boolean (default: false)
-- recurring: boolean (default: false)
-- recurring_schedule: enum (daily, weekly, monthly) (optional)
-- recurring_end_condition: enum (never, after_n_occurrences, on_specific_date) (optional)
+- recurring_schedule: enum (none, daily, weekly, monthly, yearly) (default: none)
+- recurring_end_condition: enum (never, after_n_occurrences, on_specific_date) (default: never)
 
 ## Goal Model
 - name: string (required)
