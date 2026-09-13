@@ -1,3 +1,4 @@
+# MyTracker Project Vision
 MyTracker is a personal productivity application that allows its user to set and track daily tasks, routines, and goals. 
 It provides concrete evidence of progress that may help individuals who struggle finding such when motivation is low.
 
