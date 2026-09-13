@@ -1,6 +1,6 @@
 # MyTracker Technology Stack
 
-## Technology Stack
+## Initial Technology Stack
 - Programming Language: Python
 - User Interfact: CLI
 - Database: SQLite
