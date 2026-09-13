@@ -1,24 +1,6 @@
 # Task class
-from enum import Enum
 import datetime
-
-class Priority(Enum):
-    LOW = "low" 
-    MEDIUM = "medium"
-    HIGH = "high"
-
-class RecurringSchedule(Enum):
-    NONE = "none"
-    DAILY = "daily"
-    WEEKLY = "weekly"
-    MONTHLY = "monthly"
-    YEARLY = "yearly"
-
-class RecurringEndCondition(Enum):
-    NEVER = "never"
-    AFTER_N_OCCURRENCES = "after_n_occurrences"
-    ON_DATE = "on_date"
-
+from enums import Priority, RecurringSchedule, RecurringEndCondition
 
 class Task:
     def __init__(self,
