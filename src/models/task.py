@@ -4,7 +4,7 @@ from enums import Priority, RecurringSchedule, RecurringEndCondition
 
 class Task:
     def __init__(self,
-        name: str, 
+        title: str, 
         description: str = "", 
         completed: bool = False, 
         priority: Priority = Priority.MEDIUM,
@@ -13,10 +13,11 @@ class Task:
         recurring_end_condition: RecurringEndCondition = RecurringEndCondition.NEVER
         ):
 
-        self.__name = name
-        self.__description = description
-        self.__completed = completed
-        self.__priority = priority
-        self.__due_datetime = due_datetime
-        self.__recurring_schedule = recurring_schedule
-        self.__recurring_end_condition = recurring_end_condition
+        self.id: int = None
+        self.title = title
+        self.description = description
+        self.completed = completed
+        self.priority = priority
+        self.due_datetime = due_datetime
+        self.recurring_schedule = recurring_schedule
+        self.recurring_end_condition = recurring_end_condition
