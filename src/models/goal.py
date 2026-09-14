@@ -1,6 +1,6 @@
 #Goal Class
 
-from enums import Priority
+from .enums import Priority
 import datetime
 
 

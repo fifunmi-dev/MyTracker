@@ -13,6 +13,7 @@ class RecurringSchedule(Enum):
     YEARLY = "yearly"
 
 class RecurringEndCondition(Enum):
+    NONE = "none"
     NEVER = "never"
     AFTER_N_OCCURRENCES = "after_n_occurrences"
     ON_DATE = "on_date"

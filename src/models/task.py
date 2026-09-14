@@ -1,6 +1,6 @@
 # Task class
 import datetime
-from enums import Priority, RecurringSchedule, RecurringEndCondition
+from .enums import Priority, RecurringSchedule, RecurringEndCondition
 
 class Task:
     def __init__(self,

@@ -1,5 +1,5 @@
 import sqlite3
-from models import Task, Goal
+from .. import Task, Goal
 
 class DatabaseManager:
     def __init__(self, db_name: str):
@@ -28,11 +28,11 @@ class DatabaseManager:
                 id INTEGER PRIMARY KEY,
                 title TEXT NOT NULL,
                 description TEXT,
+                completed INTEGER DEFAULT 0,
                 priority TEXT NOT NULL,
-                due_date TEXT,
+                due_datetime TEXT,
                 recurring_schedule TEXT NOT NULL,
-                recurring_end_condition TEXT NOT NULL,
-                completed INTEGER DEFAULT 0
+                recurring_end_condition TEXT NOT NULL
             )
         ''')
 
@@ -43,7 +43,7 @@ class DatabaseManager:
                 title TEXT NOT NULL,
                 description TEXT,
                 priority TEXT NOT NULL,
-                due_date TEXT,
+                due_datetime TEXT,
                 completed INTEGER DEFAULT 0
             )
         ''')
