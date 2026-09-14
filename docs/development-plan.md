@@ -2,7 +2,7 @@
 
 ## Development Phases
 
-### Phase 1: Basic Task Functionality
+### Phase 1: Basic Task Functionality - Complete
 - Create tasks
 - Store tasks in a local SQLite database
 - View tasks in a list format
